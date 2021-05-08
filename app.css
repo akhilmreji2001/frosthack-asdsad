@@ -1,11 +1,4 @@
-.movable{
-    position:absolute;
-    left: 0px;
-    animation-name: alert1;
-    animation-duration: 4s;
-}
-
-@keyframes alert1{
-    from{transform: translate(0px);}
-    to{transform: translate(700px);}
+.card-header{
+    color:red;
+    font-size: large;
 }
