@@ -22,9 +22,13 @@ function newwind4()
 {
     window.open("https://financialwolves.com/get-paid-to-code-online/","_blank");
 }
+function newwind8()
+{
+    window.open("https://elitedatascience.com/learn-machine-learning","_blank");
+}
 
-document.getElementById("header").addEventListener("click", displayDate);
 
-function displayDate() {
-  document.getElementById("demo").innerHTML = Date();
+function newwind7()
+{
+    window.open("https://blog.codingblocks.com/2019/start-with-competitive-programming/","_blank");
 }
