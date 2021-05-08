@@ -1,174 +1,235 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Rookie Coders</title>
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <script type="text/javascript" src="js.js">
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="Practice and Compete.html">Practice and Compete</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Learn
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Programming Language</a></li>
-                                    <li><a class="dropdown-item" href="#">Web Terminology</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Other Tutorials</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About us</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+        </script>
+        <link href="app.css" rel="stylesheet">
+        <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <li class="nav-item dropdown">
+                    <a class="nav-link " aria-current="page" href="Practice and Compete.html">Practice and Competiton</a>
+                </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                practice
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">hackerrank</a></li>
+                                <li><a class="dropdown-item" href="#">codechief</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li>-->
+                                <li><a class="dropdown-item" href="#">leet code</a></li>
+                                <li><a class="dropdown-item" href="#">codeForce</a></li>
+
+
+                            </ul>
+                        </li>
+                        </li>
+                        <a class="nav-link" href="#">About us</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                learning
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="img1.jpg"  height="500"  class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to </h5>
+                        <p>Learn what ever you want.</p>
+                        <button type="button" class="btn btn-primary" onclick="location.href='Practice and Compete.html'">Compete and practise</button>
+                        <button type="button" class="btn btn-secondary">Learn something new</button>
+                        <button type="button" class="btn btn-success">Technology news</button>
                     </div>
                 </div>
-            </nav>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img2.jpg" height="500" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to </h5>
+                        <p>Practise whatever you want.</p>
+                        <a href="Practice and Compete.html"><button type="button" class="btn btn-primary" >Compete and practise</button></a>
+                        <button type="button" class="btn btn-secondary">Learn something new</button>
+                        <button type="button" class="btn btn-success">Technology news</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="img3.jpg" height="500" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to</h5>
+                        <p>Know latest Technology things aroung globe.</p>
+                        <button type="button" class="btn btn-primary" onclick="location.href='Practice and Compete.html'" >Compete and practise</button>
+                        <button type="button" class="btn btn-secondary">Learn something new</button>
+                        <button type="button" class="btn btn-success">Technology news</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div id="contentBody">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner ">
-                    <div class="carousel-item active" data-bs-interval="4000">
-                        <img src="img2.jpg"  height="500"  class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Welcome to </h5>
-                            <p>Learn what ever you want.</p>
-                            <button type="button" class="btn btn-primary" onclick="location.href='Practice and Compete.html'">Compete and practise</button>
-                            <button type="button" class="btn btn-secondary">Learn something new</button>
-                            <button type="button" class="btn btn-success">Technology news</button>
-                        </div>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show my-4" role="alert">
+       <marquee direction="right" width="100%" scrollamount="10"><a href="https://clist.by/" target="_blank" class="alert-link">Click here to competitive programming contest </a> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  <a target="_blank" href="http://www.123seminarsonly.com/CS_IT_Page12.html" class="alert-link">Click here to see all seminar on technology </a> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<a target="_blank" href="https://dare2compete.com/e/global-hackathons-coding-challenges-competitions-india" class="alert-link"> Click here to see all upcoming hackathon</a>.  </marquee>
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
+    <div class="container mr-0 my-4">
+        <div class="row">
+          <div class="col ">
+              <h2> Latest Updates</h2>
+            <div class="card mb-3" style="max-width: 500px; max-height: 300px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img height="200px" width="170px" src="img-5G.jpg" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" onclick="newwind2()">
+                      <h5 class="card-title">5G is finally heree</h5>
+                      <p class="card-text"> The 5th generation of mobile networks, 5G is the evolution of the 4G networks of today. It has been created to meet and surpass the massive growth of data and connectivity of IoT, changing today’s reality and paving the way for tomorrow.</p>
                     </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="img2.jpg" height="500" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Welcome to </h5>
-                            <p>Practise whatever you want.</p>
-                            <a href="Practice and Compete.html"><button type="button" class="btn btn-primary" >Compete and practise</button></a>
-                            <button type="button" class="btn btn-secondary">Learn something new</button>
-                            <button type="button" class="btn btn-success">Technology news</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="img3.jpg" height="500" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Welcome to</h5>
-                            <p>Know latest Technology things aroung globe.</p>
-                            <button type="button" class="btn btn-primary" onclick="location.href='Practice and Compete.html'" >Compete and practise</button>
-                            <button type="button" class="btn btn-secondary">Learn something new</button>
-                            <button type="button" class="btn btn-success">Technology news</button>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            
-            <div class="container-fluid ml-4 my-4">
-                <div class="row">
-                <div class="col ">
-                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-                        <div class="card-header"><h2 style="color:chocolate;">Latest Coding Updates</h2><br></div>
-                        <div class="card-body">
-                        <h5 class="card-title"></h5>
-                            <p class="card-text"> 
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-                                    The current link item
-                                    </a>
-                                    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-                                    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-                                    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-                                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
-                                </div>
-                            </p>
-                        </div>
+              </div>
+              <div class="card mb-3" style="max-width: 500px; max-height: 300px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img height="200px" width="170px" src="img-latestupadets2.jpg" alt="...">
+                  </div>
+                  <div  class="col-md-8" >
+                    <div  class="card-body" onclick="newwind()" >
+                      <h5 class="card-title" >Digital technology on the cutting edge</h5>
+                      <p class="card-text"  >Digital technologies such as AI, big data and ML are increasingly important to the manufacturing industry. Sandvik has partnered with IBM on several digital key projects.</p>
                     </div>
+                  </div>
                 </div>
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-header">Featured</div>
-                        <div class="card-body">
-                        <h5 class="card-title">How to Start Coding </h5>
-                        <p class="card-text">oding is the fundamental skill for jobs such as software development. There is currently a shortage of software developers worldwide, so learning to code can be an easy route into an open field of work. However, this isn’t the only way coding can open up job opportunities.</p>
-                        <a href="https://www.codingdojo.com/blog/how-to-start-coding" class="btn btn-primary">Learn from codingdojo</a>
-                        </div>
+              </div>
+              <div class="card mb-3" style="max-width: 500px; max-height: 300px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img height="200px" width="170px" src="img-latestupadets3.jpg" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" onclick="newwind3()">
+                      <h5 class="card-title">Artificial Intelligence</h5>
+                      <p class="card-text">Artificial Intelligence (AI) is opening up many opportunities for both producers and suppliers</p>
                     </div>
+                  </div>
                 </div>
+              </div>
+              <div class="card mb-3" style="max-width: 500px; max-height: 300px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img height="200px" width="170px" src="img-latestupadets4.jpg" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" onclick="newwind6()">
+                      <h5 class="card-title">Data Science</h5>
+                      <p class="card-text">Forget oil, gas or rare-earth elements. In coming years data is set to become the world's most valuable resource. Advances in technology, from robotics to artificial intelligence, are transforming industries across the world.</p>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+          </div>
+          <div class="col-6">
+    <br>
+            <div class="card">
+                <div class="card-header">
+                  <h2>Are you a Beginner?</h2>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">How to Start Coding </h5>
+                  <p class="card-text">Coding is the fundamental skill for jobs such as software development. There is currently a shortage of software developers worldwide, so learning to code can be an easy route into an open field of work. However, this isn’t the only way coding can open up job opportunities.</p>
+                  <a href="https://www.codingdojo.com/blog/how-to-start-coding" class="btn btn-primary">Learn from codingdojo</a>
+                </div>
+              </div>
+              <br><br><br>
+              <div class="card my-9"  onclick="newwind4()" style="width: 34rem;">
+                <img src="img-maoney.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Make Money from Programming </h5>
+                  <p class="card-text">If you’re a programming geek and not making any money online, you are missing out BIG. Anyone (read: you) that’s familiar with languages such as C++, HTML, Python, NET, Java, and PHP, can get paid to code online.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+       
 
-            <div class="container" >
-                <div class="row">
-                    <div class="col-3 ml-8 mr-7">
-                        <!-- <iframe src="https://stackify.com/18-websites-every-developer-should-visit-right-now/"></iframe>-->
-                    </div>
-                    <div align="right" class="col-6 ml-8 mr-7">
-                        <a class="cat-post-thumbnail cat-post-none" href="https://stackify.com/python-garbage-collection/"
-                        title="Python Garbage Collection: What It Is and How It Works"><span
-                            class="cat-post-crop cat-post-format cat-post-format-standard"><img
-                                src="https://stackify.com/wp-content/uploads/2019/03/IMG_8068-1-150x150.jpg"
-                                class="attachment-50x50 size-50x50 wp-post-image" alt="Python garbage collection" loading="lazy"
-                                width="50" height="50"></span></a> <a class="cat-post-title"
-                        href="https://stackify.com/python-garbage-collection/" rel="bookmark"
-                        style="outline: currentcolor none medium;">Python Garbage Collection: What It Is and How It Works</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
-            crossorigin="anonymous"></script>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2020–2021 </p>
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a href="#">Back to Top</a></li>
+        </ul>
+      </footer>
+           
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
 
-            <!-- Option 2: Separate Popper and Bootstrap JS -->
-            <!--
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-            -->
-        <script type="text/javascript" src="index.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+    
     </body>
+
 </html>
